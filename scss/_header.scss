@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhai", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  .menu {
+    display: flex;
+    min-height: 100px;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 5px 5px -5px rgb(168, 168, 168);
+    z-index: 1;
+    .logo {
+      display: flex;
+      flex: 2;
+      font-size: 1rem;
+      justify-content: center;
+      align-items: center;
+      .icon {
+        color: rgb(194, 124, 20);
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .txt {
+        padding-left: 5px;
+        p:nth-child(1) {
+          font-size: 3.5rem;
+          color: rgb(78, 99, 4);
+          line-height: 30px;
+        }
+        p:nth-child(2) {
+          color: black;
+          font-size: 2rem;
+          line-height: 20px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+header {
+  .menu {
+    nav {
+      display: flex;
+      align-items: center;
+      flex: 3;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        list-style: none;
+        padding: 0 15px;
+        font-size: 0;
+        cursor: pointer;
+        a {
+          font-size: 1.8rem;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: rgb(48, 48, 48);
+          padding: 20px 10px;
+          transition: 0.4s;
+          &:hover {
+            color: orangered;
+          }
+          a:last-child {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+header {
+  .baner {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    height: 110vh;
+    background-image: url(../img/mushrooms_head.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-transform: uppercase;
+    align-items: center;
+    h1 {
+      font-size: 3.5rem;
+      border: white solid 6px;
+      padding: 25px 50px;
+      background-color: rgba(0, 0, 0, 0.623);
+      text-align: center;
+      margin-top: 15%;
+    }
+    .centerBtn {
+      top: 55%;
+      margin-top: 2%;
+      min-height: 45px;
+      line-height: 35px;
+      font-size: 2.5rem;
+      color: white;
+      padding: 6px 50px;
+      background-color: orange;
+      border-radius: 25px;
+      border: none;
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(255, 200, 47);
+      }
+    }
+  }
+}
+@media (orientation: portrait) and (max-width: 360px) {
+  * {
+    font-size: 6px;
+  }
+  header {
+    .baner {
+      h1 {
+        padding: 15px 25px;
+        margin: 35% 5% 0 5%;
+      }
+      .centerBtn {
+        margin-top: 5%;
+      }
+    }
+  }
+}
+@media (orientation: landscape) and (max-width: 640px) {
+  * {
+    font-size: 6px;
+  }
+  header {
+    .baner {
+      h1 {
+        padding: 15px 25px;
+        margin: 8% 5% 0 5%;
+      }
+      .centerBtn {
+        margin-top: 5%;
+      }
+    }
+  }
+}

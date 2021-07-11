@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Baloo Bhai", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 5px -5px #a8a8a8;
+          box-shadow: 0px 5px 5px -5px #a8a8a8;
+  z-index: 1;
+}
+
+header .menu .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu .logo .icon {
+  color: #c27c14;
+}
+
+header .menu .logo .icon:hover {
+  cursor: pointer;
+}
+
+header .menu .logo .txt {
+  padding-left: 5px;
+}
+
+header .menu .logo .txt p:nth-child(1) {
+  font-size: 3.5rem;
+  color: #4e6304;
+  line-height: 30px;
+}
+
+header .menu .logo .txt p:nth-child(2) {
+  color: black;
+  font-size: 2rem;
+  line-height: 20px;
+}
+
+header .menu .logo .txt:hover {
+  cursor: pointer;
+}
+
+header .menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+header .menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  list-style: none;
+  padding: 0 15px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+header .menu nav ul a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #303030;
+  padding: 20px 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .menu nav ul a:hover {
+  color: orangered;
+}
+
+header .menu nav ul a a:last-child {
+  border: none;
+}
+
+header .baner {
+  position: absolute;
+  top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  color: white;
+  height: 110vh;
+  background-image: url(../img/mushrooms_head.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .baner h1 {
+  font-size: 3.5rem;
+  border: white solid 6px;
+  padding: 25px 50px;
+  background-color: rgba(0, 0, 0, 0.623);
+  text-align: center;
+  margin-top: 15%;
+}
+
+header .baner .centerBtn {
+  top: 55%;
+  margin-top: 2%;
+  min-height: 45px;
+  line-height: 35px;
+  font-size: 2.5rem;
+  color: white;
+  padding: 6px 50px;
+  background-color: orange;
+  border-radius: 25px;
+  border: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+header .baner .centerBtn:hover {
+  background-color: #ffc82f;
+}
+
+@media (orientation: portrait) and (max-width: 360px) {
+  * {
+    font-size: 6px;
+  }
+  header .baner h1 {
+    padding: 15px 25px;
+    margin: 35% 5% 0 5%;
+  }
+  header .baner .centerBtn {
+    margin-top: 5%;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 640px) {
+  * {
+    font-size: 6px;
+  }
+  header .baner h1 {
+    padding: 15px 25px;
+    margin: 8% 5% 0 5%;
+  }
+  header .baner .centerBtn {
+    margin-top: 5%;
+  }
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-color: white;
+  color: #303030;
+}
+
+main .about h2 {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+main .about p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1% 5%;
+  text-align: justify;
+  text-align-last: center;
+}
+
+main .gallery {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 85vw;
+  background-color: #aa742d;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  padding: 1% 0 1% 0;
+}
+
+main .gallery div {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: white;
+  text-align: center;
+}
+
+main .gallery div h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 5% 0 5% 5%;
+}
+
+main .gallery div p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  padding-top: 2%;
+  text-align: justify;
+  padding: 0 5% 0 5%;
+}
+
+main .gallery div img {
+  width: 80%;
+  height: 80%;
+}
+
+main .gallery .one,
+main .gallery .five,
+main .gallery .nine {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+main .gallery .four,
+main .gallery .eight,
+main .gallery .twelve {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+}
+
+main .gallery .one.active,
+main .gallery .five.active,
+main .gallery .nine.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+main .gallery .four.active,
+main .gallery .eight.active,
+main .gallery .twelve.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+  main .gallery div h2 {
+    font-size: 1.5rem;
+  }
+  main .gallery div p {
+    font-size: 1.5rem;
+    padding: 0 1% 0 1%;
+  }
+  main .gallery div img {
+    width: 99%;
+    height: 99%;
+  }
+}
+
+main .aboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px 15px;
+}
+
+main .aboutUs h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main .aboutUs p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  width: 80vw;
+  text-align: justify;
+}
+
+main .support {
+  width: 100%;
+  background-image: url(../img/bottom.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+main .support .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 27vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.452);
+}
+
+main .support .wrap div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .support .wrap div p {
+  font-size: 2rem;
+}
+
+footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #aa742d;
+}
+
+footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+footer .contact p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 5vh;
+  -ms-flex-preferred-size: 26%;
+      flex-basis: 26%;
+  color: white;
+}
+
+footer .contact p:nth-child(1), footer .contact p:nth-child(2), footer .contact p:nth-child(3) {
+  text-transform: uppercase;
+  border-bottom: 5px solid #ad8b5b;
+}
+
+footer .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #69502e;
+  padding: 10px 0 10px 0;
+}
+
+footer .bottom img {
+  width: 50px;
+}
+
+footer .bottom p {
+  padding-top: 10px;
+  color: #bebebe;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+}
+
+footer .bottom p:nth-child(2) {
+  top: 60%;
+  left: 50%;
+}
+
+footer .bottom p:nth-child(3) {
+  top: 72%;
+  left: 50%;
+}
+/*# sourceMappingURL=style.css.map */
