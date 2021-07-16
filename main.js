@@ -4,7 +4,7 @@ const parallaxImg2 = document.querySelector(".support");
 function parallax() {
   let offset = window.pageYOffset;
   parallaxImg1.style.backgroundPositionY = offset * -0.5 + "px";
-  parallaxImg2.style.backgroundPositionY = offset * -0.3 + "px";
+  parallaxImg2.style.backgroundPositionY = offset * -0.29 + "px";
 }
 window.addEventListener("scroll", parallax);
 

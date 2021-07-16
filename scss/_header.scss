@@ -100,6 +100,7 @@ header {
     height: 110vh;
     background-image: url(../img/mushrooms_head.jpg);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     text-transform: uppercase;
     align-items: center;
@@ -130,15 +131,38 @@ header {
     }
   }
 }
-@media (orientation: portrait) and (max-width: 360px) {
+
+@media (max-width: 775px) {
   * {
     font-size: 6px;
   }
+
+  header {
+    .menu {
+      min-height: 70px;
+    }
+  }
+
+  header {
+    .menu {
+      nav {
+        flex: 4;
+        ul {
+          a {
+            font-size: 2.1rem;
+            padding: 20px 5px;
+          }
+        }
+      }
+    }
+  }
+
   header {
     .baner {
+      top: 70px;
       h1 {
         padding: 15px 25px;
-        margin: 35% 5% 0 5%;
+        margin: 17% 5% 0 5%;
       }
       .centerBtn {
         margin-top: 5%;
@@ -146,15 +170,19 @@ header {
     }
   }
 }
-@media (orientation: landscape) and (max-width: 640px) {
+
+@media (max-width: 393px) {
   * {
     font-size: 6px;
+  }
+  .txt {
+    display: none;
   }
   header {
     .baner {
       h1 {
-        padding: 15px 25px;
-        margin: 8% 5% 0 5%;
+        padding: 25px 35px;
+        margin-top: 40%;
       }
       .centerBtn {
         margin-top: 5%;

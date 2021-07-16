@@ -142,6 +142,7 @@ header .baner {
   height: 110vh;
   background-image: url(../img/mushrooms_head.jpg);
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   text-transform: uppercase;
   -webkit-box-align: center;
@@ -178,26 +179,44 @@ header .baner .centerBtn:hover {
   background-color: #ffc82f;
 }
 
-@media (orientation: portrait) and (max-width: 360px) {
+@media (max-width: 775px) {
   * {
     font-size: 6px;
   }
+  header .menu {
+    min-height: 70px;
+  }
+  header .menu nav {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
+  header .menu nav ul a {
+    font-size: 2.1rem;
+    padding: 20px 5px;
+  }
+  header .baner {
+    top: 70px;
+  }
   header .baner h1 {
     padding: 15px 25px;
-    margin: 35% 5% 0 5%;
+    margin: 17% 5% 0 5%;
   }
   header .baner .centerBtn {
     margin-top: 5%;
   }
 }
 
-@media (orientation: landscape) and (max-width: 640px) {
+@media (max-width: 393px) {
   * {
     font-size: 6px;
   }
+  .txt {
+    display: none;
+  }
   header .baner h1 {
-    padding: 15px 25px;
-    margin: 8% 5% 0 5%;
+    padding: 25px 35px;
+    margin-top: 40%;
   }
   header .baner .centerBtn {
     margin-top: 5%;
@@ -323,20 +342,6 @@ main .gallery .twelve.active {
           transform: translateX(0);
 }
 
-@media (orientation: portrait) and (min-width: 360px) {
-  main .gallery div h2 {
-    font-size: 1.5rem;
-  }
-  main .gallery div p {
-    font-size: 1.5rem;
-    padding: 0 1% 0 1%;
-  }
-  main .gallery div img {
-    width: 99%;
-    height: 99%;
-  }
-}
-
 main .aboutUs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,8 +376,6 @@ main .aboutUs p {
 main .support {
   width: 100%;
   background-image: url(../img/bottom.jpg);
-  background-position: center;
-  background-attachment: fixed;
   color: white;
 }
 
@@ -409,6 +412,41 @@ main .support .wrap div {
 
 main .support .wrap div p {
   font-size: 2rem;
+}
+
+@media (max-width: 393px) {
+  main .gallery {
+    width: 100vw;
+  }
+  main .gallery div h2 {
+    font-size: 1.7rem;
+  }
+  main .gallery div p {
+    font-size: 1.7rem;
+    padding: 0 2% 0 2%;
+  }
+  main .gallery div img {
+    width: 99%;
+    height: 99%;
+  }
+  main .support .wrap {
+    padding: 0 10%;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+  main .support .wrap div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 350px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .support .wrap div p {
+    font-size: 2rem;
+  }
 }
 
 footer {
@@ -475,7 +513,7 @@ footer .bottom img {
 footer .bottom p {
   padding-top: 10px;
   color: #bebebe;
-  font-size: 13px;
+  font-size: 1.3em;
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
 }
@@ -488,5 +526,23 @@ footer .bottom p:nth-child(2) {
 footer .bottom p:nth-child(3) {
   top: 72%;
   left: 50%;
+}
+
+@media (max-width: 775px) {
+  footer .contact p {
+    font-size: 1.6em;
+  }
+  footer .bottom p {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 393px) {
+  footer .contact p {
+    font-size: 1.6em;
+  }
+  footer .bottom p {
+    font-size: 1.6em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

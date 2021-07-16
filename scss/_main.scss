@@ -91,25 +91,6 @@ main {
   }
 }
 
-@media (orientation: portrait) and (min-width: 360px) {
-  main {
-    .gallery {
-      div {
-        h2 {
-          font-size: 1.5rem;
-        }
-        p {
-          font-size: 1.5rem;
-          padding: 0 1% 0 1%;
-        }
-        img {
-          width: 99%;
-          height: 99%;
-        }
-      }
-    }
-  }
-}
 main .aboutUs {
   display: flex;
   flex-direction: column;
@@ -134,8 +115,9 @@ main .aboutUs {
 main .support {
   width: 100%;
   background-image: url(../img/bottom.jpg);
-  background-position: center;
-  background-attachment: fixed;
+  // background-attachment: fixed;
+  // background-size: cover;
+  // background-position-y: 50px;
   color: white;
   .wrap {
     display: flex;
@@ -152,6 +134,42 @@ main .support {
       justify-content: space-between;
       p {
         font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 393px) {
+  main {
+    .gallery {
+      width: 100vw;
+      div {
+        h2 {
+          font-size: 1.7rem;
+        }
+        p {
+          font-size: 1.7rem;
+          padding: 0 2% 0 2%;
+        }
+        img {
+          width: 99%;
+          height: 99%;
+        }
+      }
+    }
+    .support {
+      .wrap {
+        padding: 0 10%;
+        background-color: rgba(0, 0, 0, 0.452);
+        div {
+          display: flex;
+          width: 350px;
+          align-items: center;
+          justify-content: space-around;
+          p {
+            font-size: 2rem;
+          }
+        }
       }
     }
   }

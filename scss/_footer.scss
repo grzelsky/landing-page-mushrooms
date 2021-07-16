@@ -39,7 +39,7 @@ footer .bottom {
   p {
     padding-top: 10px;
     color: rgb(190, 190, 190);
-    font-size: 13px;
+    font-size: 1.3em;
     font-family: "Roboto", sans-serif;
     text-transform: capitalize;
     &:nth-child(2) {
@@ -49,6 +49,34 @@ footer .bottom {
     &:nth-child(3) {
       top: 72%;
       left: 50%;
+    }
+  }
+}
+@media (max-width: 775px) {
+  footer {
+    .contact {
+      p {
+        font-size: 1.6em;
+      }
+    }
+    .bottom {
+      p {
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+@media (max-width: 393px) {
+  footer {
+    .contact {
+      p {
+        font-size: 1.6em;
+      }
+    }
+    .bottom {
+      p {
+        font-size: 1.6em;
+      }
     }
   }
 }
