@@ -19,7 +19,6 @@ body {
 }
 
 header {
-  position: relative;
   height: 100vh;
 }
 
@@ -413,7 +412,7 @@ main .support .wrap div p {
   font-size: 2rem;
 }
 
-@media (max-width: 393px) {
+@media (max-width: 400px) {
   main .gallery {
     width: 100vw;
   }
@@ -537,7 +536,7 @@ footer .bottom p:nth-child(3) {
   }
 }
 
-@media (max-width: 393px) {
+@media (max-width: 400px) {
   footer .contact p {
     font-size: 1.6em;
   }
