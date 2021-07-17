@@ -39,6 +39,7 @@ main .gallery {
   left: 50%;
   transform: translate(-50%);
   padding: 1% 0 1% 0;
+  overflow: hidden;
   div {
     flex: 50%;
     flex-shrink: 0;
@@ -116,9 +117,6 @@ main .aboutUs {
 main .support {
   width: 100%;
   background-image: url(../img/bottom.jpg);
-  // background-attachment: fixed;
-  // background-size: cover;
-  // background-position-y: 50px;
   color: white;
   .wrap {
     display: flex;
